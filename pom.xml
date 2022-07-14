@@ -87,8 +87,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot</artifactId>
-    <version>1.5.19.RELEASE</version>
+    <artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<excludes>
 						<exclude>
