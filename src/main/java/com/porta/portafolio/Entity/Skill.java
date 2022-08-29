@@ -24,6 +24,4 @@ public class Skill {
     @NotNull
     @Size(min=1,max=600, message = "no me cumple la condicion")
     private String img;
-    @Size(min=1,max=600, message = "no me cumple la condicion")
-    private String nivel;
 }
