@@ -59,7 +59,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable() // SI estuvieramos usando cookies no es buena idea usar esto
                 .authorizeRequests()
-                .antMatchers("**").permitAll()// TODO el mundo puede acceder sin problema en esta URI
+                .antMatchers("**","/api-docs/**", "/swagger-resources/**", "/configuration/ui", "/swagger-ui/**").permitAll()// TODO el mundo puede acceder sin problema en esta URI
                 .anyRequest().authenticated()
                 .and()
                 .exceptionHandling().authenticationEntryPoint(jwtEntryPoint)
