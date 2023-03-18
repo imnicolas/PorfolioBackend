@@ -18,3 +18,4 @@ public class DatabaseConfig {
 
     @Value("${DB_NAME}")
     private String dbName;
+}
